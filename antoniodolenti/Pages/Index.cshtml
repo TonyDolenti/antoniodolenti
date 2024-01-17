@@ -1,0 +1,47 @@
+﻿@page
+<!DOCTYPE html>
+<html lang="en">
+@{
+
+    Layout = "/Pages/Shared/_Layout.cshtml";
+}
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="card-title">Tony Dolenti</h1>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body" data-toggle="collapse" data-target="#aboutme">
+                <h2 class="card-title">About Me</h2>
+                <div id="aboutme" class="collapse">
+                    <p class="card-text">About me.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body" data-toggle="collapse" data-target="#project1">
+                <h2 class="card-title">Project: SupercarPulse</h2>
+                <div id="project1" class="collapse">
+                    <p class="card-text">Description of SupercarPulse.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body" data-toggle="collapse" data-target="#project2">
+                <h2 class="card-title">Project: TacoParser</h2>
+                <div id="project2" class="collapse">
+                    <p class="card-text">Description of TacoParser.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
