@@ -7,12 +7,21 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/antoniodolenti.styles.css" asp-append-version="true" />
-    
 </head>
 <body>
-    <header>
+    <header></header>
 
-    </header>
+    <div class="get-in-touch-card">
+        <p class="lead">Get in touch with me:</p>
+        <a href="https://github.com/TonyDolenti" target="_blank">
+            <img src="~/imgs/GitHub-logo.png" alt="GitHub Logo" width="180" height="auto">
+        </a>
+        <a href="https://www.linkedin.com/in/antonio-dolenti-b8a02a254/" target="_blank">
+            <img src="~/imgs/linkedin logo.png" alt="LinkedIn Logo" width="120" height="120">
+        </a>
+        <a href="mailto:antoniodolenti@gmail.com?subject=Message%20from%20Website" class="btn btn-custom">Send Message</a>
+    </div>
+
     <div class="scroll-container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -20,18 +29,8 @@
     </div>
 
     <footer class="border-top footer text-muted text-white text-center">
-        <div class="footer">
-            <p class="lead">Get in touch with me:</p>
-            <a href="https://github.com/TonyDolenti" target="_blank">
-                <img src="~/imgs/GitHub-logo.png" alt="GitHub Logo" width="180" height="auto">
-            </a>
-            <a href="https://www.linkedin.com/in/antonio-dolenti-b8a02a254/" target="_blank">
-                <img src="~/imgs/linkedin logo.png" alt="LinkedIn Logo" width="120" height="120">
-            </a>
-        </div>
+        
     </footer>
-
-
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

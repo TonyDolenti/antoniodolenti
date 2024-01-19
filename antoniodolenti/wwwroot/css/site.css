@@ -21,6 +21,7 @@ body {
 }
 
 .card {
+    user-select: none;
     background-color: white;
     border-radius: 15px !important;
     margin: 20px;
@@ -58,6 +59,80 @@ main {
 
 
 .scroll-container {
-    max-height: 700px;
+    max-height: 900px;
     overflow-y: auto;
+}
+
+.custom-card-body {
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+
+/*.container-blurred {
+    position: relative;
+    overflow: hidden;
+    background-image: url('/imgs/background.jpg');*/ /* Adjust the path accordingly */
+    /*background-size: cover;
+    background-position: center;
+    filter: blur(5px);*/ /* Adjust the blur amount as needed */
+/*}*/
+
+.name-card {
+    position: relative;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7); /* Adjust the alpha value for transparency */
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle box shadow */
+    backdrop-filter: blur(5px); /* Adjust the blur amount as needed */
+}
+
+    .name-card h1,
+    .name-card p {
+        color: black;
+    }
+
+.new-card {
+    position: relative;
+    max-width: 3000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7); /* Adjust the alpha value for transparency */
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle box shadow */
+    backdrop-filter: blur(5px); /* Adjust the blur amount as needed */
+}
+
+    .new-card h1,
+    .new-card p {
+        color: black;
+    }
+
+.get-in-touch-card {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    text-align: center; /* Center align the content */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+    .get-in-touch-card a {
+        margin: 10px; /* Add some spacing between the images */
+    }
+
+.btn-custom {
+    border-radius: 7px;
+    background-color: dimgray;
+    color: white !important;
 }
