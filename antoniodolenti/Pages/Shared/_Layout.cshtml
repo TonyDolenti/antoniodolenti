@@ -7,74 +7,30 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/antoniodolenti.styles.css" asp-append-version="true" />
-    <style>
-        body {
-            background-color: #f8f9fa;
-        }
-
-        header {
-            background-color: #007BFF;
-            padding: 15px 0;
-        }
-
-            header a {
-                color: white;
-                font-size: 24px;
-                font-weight: bold;
-            }
-
-        .navbar-toggler-icon {
-            color: white;
-        }
-
-        main {
-            margin-top: 20px;
-        }
-
-        .card {
-            margin-bottom: 20px;
-        }
-
-        .navbar-nav .nav-item {
-            margin: 0 10px;
-        }
-
-        /* New styles for "Connect with me" section */
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-            footer a {
-                color: white;
-                margin: 0 10px;
-            }
-    </style>
+    
 </head>
 <body>
     <header>
-        <!-- ... (unchanged) ... -->
+
     </header>
-    <div class="container">
+    <div class="scroll-container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
     <footer class="border-top footer text-muted text-white text-center">
-        <div class="container">
-            <p class="display-4">&copy; 2024 - antoniodolenti</p>
-            <p class="lead">Connect with me:</p>
+        <div class="footer">
+            <p class="lead">Get in touch with me:</p>
             <a href="https://github.com/TonyDolenti" target="_blank">
-                <img src="~/imgs/GitHub-logo.png" alt="GitHub Logo" width="130" height="auto">
+                <img src="~/imgs/GitHub-logo.png" alt="GitHub Logo" width="180" height="auto">
             </a>
             <a href="https://www.linkedin.com/in/antonio-dolenti-b8a02a254/" target="_blank">
-                <img src="~/imgs/linkedin logo.png" alt="LinkedIn Logo" width="80" height="80">
+                <img src="~/imgs/linkedin logo.png" alt="LinkedIn Logo" width="120" height="120">
             </a>
         </div>
     </footer>
+
 
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

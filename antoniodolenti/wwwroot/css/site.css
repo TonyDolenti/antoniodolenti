@@ -14,5 +14,50 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-image: url('/imgs/backround.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px !important;
+    margin: 20px;
+    text-align: center;
+    margin-bottom: 0;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+header {
+/*    background-color: #007BFF ;*/
+    padding: 0px 0;
+}
+
+main {
+    margin-top: 20px;
+}
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 5px 0 !important;
+    text-align: center;
+}
+
+    footer a {
+        color: white;
+        margin: 0 10px;
+    }
+
+
+.scroll-container {
+    max-height: 700px;
+    overflow-y: auto;
 }

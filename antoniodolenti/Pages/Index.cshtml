@@ -8,40 +8,69 @@
 <body>
     <div class="container">
         <div class="card">
-            <div class="card-body">
+            <div class="card-body" data-toggle="collapse" data-target="#aboutMeSection">
                 <h1 class="card-title">Tony Dolenti</h1>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-body" data-toggle="collapse" data-target="#aboutme">
-                <h2 class="card-title">About Me</h2>
-                <div id="aboutme" class="collapse">
-                    <p class="card-text">About me.</p>
+                <div id="aboutMeSection" class="collapse">
+                    <h2 class="card-subtitle mb-2 text-muted">About Me</h2>
+                    <p class="card-text">
+                        I am a 21-year-old enthusiastically pursuing a career as a software developer. During high school,
+                        I delved into the realms of robotics and avionics,
+                        discovering a profound passion for programming. Currently, I am a full-stack developer, channeling
+                        my skills and dedication into creating innovative solutions.
+                    </p>
                 </div>
             </div>
         </div>
 
         <div class="card">
-            <div class="card-body" data-toggle="collapse" data-target="#project1">
-                <h2 class="card-title">Project: SupercarPulse</h2>
-                <div id="project1" class="collapse">
-                    <p class="card-text">Description of SupercarPulse.</p>
+            <div class="card-body" data-toggle="collapse" data-target="#skills">
+                <h2 class="card-title">Skills</h2>
+                <div id="skills" class="collapse">
+                    <p class="card-text">
+                        <img src="~/imgs/csharp.png" alt="C#" style="width: 200px;" height="200px;">
+
+                        <img src="~/imgs/html.png" alt="HTML5" style="width: 200px;" height="200px;">
+                        <img src="~/imgs/css.png" alt="CSS3" style="width: 175px;" height="200px;">
+                        <img src="~/imgs/js.png" alt="JavaScript" style="width: 200px;" height="200px;">
+                        <img src="~/imgs/asp.png" alt="ASP.NET" style="width: 400px;" height="200px;">
+                        <img src="~/imgs/sql.png" alt="SQL" style="width: 400px;" height="200px;">
+                    </p>
                 </div>
             </div>
         </div>
 
         <div class="card">
-            <div class="card-body" data-toggle="collapse" data-target="#project2">
-                <h2 class="card-title">Project: TacoParser</h2>
-                <div id="project2" class="collapse">
-                    <p class="card-text">Description of TacoParser.</p>
+            <div class="card-body" style="background-color: #f8f9fa; text-align: center;">
+                <h2 class="card-title" data-toggle="collapse" data-target="#experienceSection">Experience</h2>
+
+                <div id="experienceSection" class="collapse">
+                    <div class="row">
+                        <!-- Project 1 - Left -->
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h3 class="card-title">SupercarPulse</h3>
+                                <p class="card-text">
+                                    Discover a carefully curated collection of high-end vehicles,
+                                    each presented with its unique details and specifications. It's your gateway to the world of extraordinary automobiles with SupercarPulse.I successfully employed ASP.NET MVC,
+                                    harnessing the power of Dapper and leveraging a MySQL database to seamlessly implement CRUD operations.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 - Right -->
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h3 class="card-title">TacoParser</h3>
+                                <p class="card-text">Project 2 details go here.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
 
 </body>
 </html>
-
 
