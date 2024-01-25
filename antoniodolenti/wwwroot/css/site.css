@@ -1,3 +1,35 @@
+
+@font-face {
+    /*font-family: 'DM Serif Display';
+    src: url('/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf') format('truetype');*/ /* Regular style */
+    /*font-weight: normal;
+    font-style: normal;*/
+
+    font-family: 'ArchivoBlack';
+    src: url('/fonts/ArchivoBlack-Regular.ttf') format('opentype'); /* Regular style */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bonheur Royale';
+    src: url('/fonts/Bonheur_Royale/BonheurRoyale-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mr Dafoe';
+    src: url('/fonts/Mr_Dafoe/MrDafoe-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body, h1, h2, h3, p, a {
+    font-family: 'ArchivoBlack', regular;
+    letter-spacing: 1px;
+}
+
 html {
   font-size: 14px;
 }
@@ -15,9 +47,10 @@ html {
 
 body {
     margin-bottom: 60px;
-    background-image: url('/imgs/backround.jpg');
+    background-image: url('/imgs/background v5.jpg');
     background-size: cover;
     background-position: center;
+    padding-top: 70px;
 }
 
 .card {
@@ -26,13 +59,18 @@ body {
     border-radius: 15px !important;
     margin: 20px;
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .card:hover {
     transform: scale(1.02);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-title-name {
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 90px;
 }
 
 header {
@@ -59,7 +97,7 @@ main {
 
 
 .scroll-container {
-    max-height: 900px;
+    max-height: 950px;
     overflow-y: auto;
 }
 
@@ -69,26 +107,22 @@ main {
     margin: 10px;
 }
 
-/*.container-blurred {
-    position: relative;
-    overflow: hidden;
-    background-image: url('/imgs/background.jpg');*/ /* Adjust the path accordingly */
-    /*background-size: cover;
-    background-position: center;
-    filter: blur(5px);*/ /* Adjust the blur amount as needed */
-/*}*/
-
 .name-card {
     position: relative;
     max-width: 700px;
-    margin: 20px auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.7); /* Adjust the alpha value for transparency */
+    margin: 30px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.4); /* Adjust the alpha value for transparency */
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle box shadow */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); /* Optional: Add a subtle box shadow */
     backdrop-filter: blur(5px); /* Adjust the blur amount as needed */
+    transition: transform 0.13s ease-in-out;
 }
+
+    .name-card:hover {
+        transform: translateY(-10px); /* Move the card up by 10 pixels when hovered */
+    }
 
     .name-card h1,
     .name-card p {
@@ -98,13 +132,13 @@ main {
 .new-card {
     position: relative;
     max-width: 3000px;
-    margin: 20px auto;
+    margin: 30px auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.7); /* Adjust the alpha value for transparency */
+    background: rgba(255, 255, 255, 0.4); /* Adjust the alpha value for transparency */
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle box shadow */
-    backdrop-filter: blur(5px); /* Adjust the blur amount as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); /* Optional: Add a subtle box shadow */
+    backdrop-filter: blur(7px); /* Adjust the blur amount as needed */
 }
 
     .new-card h1,
@@ -118,13 +152,55 @@ main {
     right: 20px;
     background: rgba(255, 255, 255, 0.7);
     border-radius: 15px;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px);
     text-align: center; /* Center align the content */
     display: flex;
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
+}
+
+.header {
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.0); /* Transparent background */
+    border-bottom: 0px solid rgba(255, 255, 255, 0.2); /* Optional: Add a subtle border */
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(7px);
+    text-align: center; /* Center align the content */
+    display: flex;
+    justify-content: left; /* Align items horizontally with space between */
+    align-items: center; /* Center items vertically */
+    z-index: 1000;
+}
+
+    .header a {
+        text-decoration: none;
+        color: dodgerblue;
+        margin: 0 10px;
+        transition: margin 0.1s ease;
+    }
+
+        .header a:hover {
+            margin-top: 5px;
+        }
+
+    .header img {
+        max-width: 100%; /* Ensure images don't overflow */
+    }
+
+    .header a.btn {
+        margin-left: auto;
+    }
+
+.send-message-link {
+    margin-left: auto; /* Move the "Send Message" link to the right */
 }
 
     .get-in-touch-card a {
@@ -135,4 +211,51 @@ main {
     border-radius: 7px;
     background-color: dimgray;
     color: white !important;
+}
+
+.video-container {
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    width: 110%; /* Adjust as needed */
+    height: 250px; /* Adjust as needed */
+}
+
+    .video-container video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* This will make the video cover the entire container, cropping it if necessary */
+    }
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.btn-outline-dark {
+    color: #343a40;
+    border-color: #343a40;
+}
+
+.btn {
+    font-size: 30px !important;
+    display: inline-block;
+    font-weight: 400;
+    color: /*#212529*/white;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.card-text {
+    padding: 70px;
 }
