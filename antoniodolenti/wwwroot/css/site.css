@@ -25,8 +25,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'RobotoSlab';
+    src: url('/fonts/RobotoSlab-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+}
+
 html, body, h1, h2, h3, p, a {
-    font-family: 'ArchivoBlack', regular;
+    font-family: 'RobotoSlab', regular;
     letter-spacing: 1px;
 }
 
@@ -171,7 +177,7 @@ main {
     background: rgba(255, 255, 255, 0.0); /* Transparent background */
     border-bottom: 0px solid rgba(255, 255, 255, 0.2); /* Optional: Add a subtle border */
     padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(7px);
     text-align: center; /* Center align the content */
     display: flex;
@@ -217,6 +223,7 @@ main {
     border-radius: 15px;
     overflow: hidden;
     position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
     width: 110%; /* Adjust as needed */
     height: 250px; /* Adjust as needed */
 }
@@ -258,4 +265,16 @@ main {
 
 .card-text {
     padding: 70px;
+}
+
+.card-title {
+    font-size: 60px;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+
+.card-sub-title {
+    font-size:30px;
+    color: white;
+    text-shadow: 2px 2px 3px black;
 }
