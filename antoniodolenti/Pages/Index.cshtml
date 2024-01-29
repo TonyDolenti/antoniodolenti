@@ -12,14 +12,16 @@
                 <h1 class="card-title-name">
                     Tony Dolenti
                 </h1>
+                <div class="arr down"><div></div></div>
                 <div id="aboutMeSection" class="collapse">
                     <h2 class="card-subtitle mb-2 text-muted">About Me</h2>
                     <p class="card-text">
-                        I am a 21-year-old enthusiastically pursuing a career as a software developer. During high school,
+                        I am a 21-year-old pursuing a career as a software developer. During high school,
                         I delved into the realms of robotics and avionics,
                         discovering a profound passion for programming. Currently, I am a newly graduated, full-stack developer from TrueCoders, channeling
                         my skills and dedication into creating innovative solutions.
                     </p>
+                    <a class="btn btn-outline-dark" href="/pdfs/Antonio B. Dolenti Resume.docx.pdf" download="Antonio B. Dolenti Resume.docx.pdf">My Resume</a>
                 </div>
             </div>
         </div>
@@ -42,20 +44,25 @@
         </div>
 
         <div class="new-card" style="text-align: center; border-radius: 15px;">
-            <div class="card-body">
+            <div class="card-body" style="position: relative;">
+                <!-- Background Image for the card -->
+                <div class="card-background" style="background-image: url('/imgs/supercar_background.jpg'); background-size: cover; position: absolute; top: 0; left: 0; width: 100%; height: 100%; filter: blur(5px); opacity: 0.7;"></div>
+
+                <!-- Card Content -->
                 <h2 class="card-title">Experience</h2>
 
                 <div id="experienceSection">
-                    <div class="row">
-                        <!-- Project 1 - Left -->
-                        <div class="col-md-6">
-                            <div class="custom-card-body">
-                                <h3 class="card-sub-title">SupercarPulse</h3>
-                                <p class="card-text">
-                                    Discover a carefully curated collection of high-end vehicles,
+                    <div class="card-group">
+                        <!-- Project 1 -->
+                        <div class="project-card" style="position: relative; z-index: 1; background-size: cover; ">
+                            <div class="card-body">
+                                <!-- Project 1 content goes here -->
+                                <h3 class="card-sub-title" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">SupercarPulse</h3>
+                                <div class="card-text">
+                                    A carefully curated collection of high-end vehicles,
                                     each presented with its unique details and specifications. It's your gateway to the world of extraordinary automobiles with SupercarPulse. I successfully employed ASP.NET MVC,
                                     harnessing the power of Dapper and leveraging a MySQL database to seamlessly implement CRUD operations.
-                                </p>
+                                </div>
                                 <div class="video-container">
                                     <video controls autoplay loop>
                                         <source src="~/imgs/Untitled.mp4" type="video/mp4">
@@ -63,7 +70,7 @@
                                     </video>
                                 </div>
                                 <div class="card-text">
-                                    Search Feature - Allows user to search site for vehicle using make or model.
+                                    - Search Feature: Allows users to search the site for vehicles using make or model.
                                 </div>
                                 <div class="video-container">
                                     <video controls autoplay loop>
@@ -72,19 +79,29 @@
                                     </video>
                                 </div>
                                 <div class="card-text">
-                                    CRUD functionality - Users can add their own supercar, using their own images and specs.
+                                    - CRUD functionality: Users can add their own supercar, using their own images and specs.
                                 </div>
                                 <div class="buttons">
-                                    <a class="btn btn-outline-dark testimonials-btn" href="https://github.com/TonyDolenti/SupercarPulse" role="button">SupercarPulse Repository</a>
+                                    <a class="btn btn-outline-dark" href="https://github.com/TonyDolenti/SupercarPulse" role="button">SupercarPulse Repository</a>
                                 </div>
+                                <!-- ... Other project 1 content ... -->
                             </div>
                         </div>
 
-                        <!-- Project 2 - Right -->
-                        <div class="col-md-6">
-                            <div class="custom-card-body">
+                        <!-- Project 2 -->
+                        <div class="project-card" style="position: relative; z-index: 1; background-size: cover; ">
+                            ">
+                            <div class="card-body">
+                                <!-- Project 2 content goes here -->
                                 <h3 class="card-sub-title">TacoParser</h3>
-                                <p class="card-text">Project 2 details go here.</p>
+                                <p class="card-text" style="color: white !important;">
+                                    This project focuses on the integration of logging, CSV parsing, and geolocation functionalities, utilizing the
+                                    Geolocator NuGet package. The primary goal is to develop a program that automatically identifies the two Taco Bell locations with the maximum distance between them.</p>
+                                <!-- ... Other project 2 content ... -->
+                                <img src="~/imgs/Taco Parser.png" alt="TacoPaser Image" style="border-radius: 15px; width: 100%; height: auto; margin-top: 10px; margin-bottom: 30px;">
+                                <div class="buttons">
+                                    <a class="btn btn-outline-dark" href="https://github.com/TonyDolenti/TacoParser/tree/version1/LoggingKata" role="button">Taco Parser Repository</a>
+                                </div>
                             </div>
                         </div>
                     </div>
