@@ -7,7 +7,7 @@
 }
 <body>
     <div class="container">
-        <div class="name-card">
+        <div class="name-card fade-in">
             <div class="card-body" data-toggle="collapse" data-target="#aboutMeSection">
                 <h1 class="card-title-name">
                     Tony Dolenti
@@ -18,15 +18,17 @@
                     <p class="card-text">
                         I am a 21-year-old pursuing a career as a software developer. During high school,
                         I delved into the realms of robotics and avionics,
-                        discovering a profound passion for programming. Currently, I am a newly graduated, full-stack developer from TrueCoders, channeling
+                        discovering a profound passion for programming. Currently, I am a newly graduated, full-stack developer from TrueCoders with a hunger to continue to learn, channeling
                         my skills and dedication into creating innovative solutions.
                     </p>
-                    <a class="btn btn-outline-dark" href="/pdfs/Antonio B. Dolenti Resume.docx.pdf" download="Antonio B. Dolenti Resume.docx.pdf">My Resume</a>
                 </div>
             </div>
         </div>
+        <div class="resume-card fade-in-slow">
+            <a class="resume-btn resume-btn-outline-dark" href="/pdfs/Resume.pdf" download="Antonio B. Dolenti Resume.pdf">My Resume</a>
+        </div>
 
-        <div class="new-card">
+        <div class="new-card fade-in">
             <div class="card-body">
                 <h2 class="card-title">Skills</h2>
                 <div id="skills">
@@ -45,18 +47,17 @@
 
         <div class="new-card" style="text-align: center; border-radius: 15px;">
             <div class="card-body" style="position: relative;">
-                <!-- Background Image for the card -->
+
                 <div class="card-background" style="background-image: url('/imgs/supercar_background.jpg'); background-size: cover; position: absolute; top: 0; left: 0; width: 100%; height: 100%; filter: blur(5px); opacity: 0.7;"></div>
 
-                <!-- Card Content -->
+
                 <h2 class="card-title">Experience</h2>
 
                 <div id="experienceSection">
                     <div class="card-group">
-                        <!-- Project 1 -->
+
                         <div class="project-card" style="position: relative; z-index: 1; background-size: cover; ">
                             <div class="card-body">
-                                <!-- Project 1 content goes here -->
                                 <h3 class="card-sub-title" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">SupercarPulse</h3>
                                 <div class="card-text">
                                     A carefully curated collection of high-end vehicles,
@@ -64,16 +65,16 @@
                                     harnessing the power of Dapper and leveraging a MySQL database to seamlessly implement CRUD operations.
                                 </div>
                                 <div class="video-container">
-                                    <video controls autoplay loop>
+                                    <video controls autoplay loop muted>
                                         <source src="~/imgs/Untitled.mp4" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
                                 </div>
                                 <div class="card-text">
-                                    - Search Feature: Allows users to search the site for vehicles using make or model.
+                                    - Search Feature: Allows users to search for vehicles using make or model, using the Dapper and MySQL database.
                                 </div>
                                 <div class="video-container">
-                                    <video controls autoplay loop>
+                                    <video controls autoplay loop muted>
                                         <source src="~/imgs/crud.mp4" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
@@ -84,20 +85,20 @@
                                 <div class="buttons">
                                     <a class="btn btn-outline-dark" href="https://github.com/TonyDolenti/SupercarPulse" role="button">SupercarPulse Repository</a>
                                 </div>
-                                <!-- ... Other project 1 content ... -->
+
                             </div>
                         </div>
 
                         <!-- Project 2 -->
                         <div class="project-card" style="position: relative; z-index: 1; background-size: cover; ">
-                            ">
+                            
                             <div class="card-body">
-                                <!-- Project 2 content goes here -->
+
                                 <h3 class="card-sub-title">TacoParser</h3>
                                 <p class="card-text" style="color: white !important;">
                                     This project focuses on the integration of logging, CSV parsing, and geolocation functionalities, utilizing the
                                     Geolocator NuGet package. The primary goal is to develop a program that automatically identifies the two Taco Bell locations with the maximum distance between them.</p>
-                                <!-- ... Other project 2 content ... -->
+
                                 <img src="~/imgs/Taco Parser.png" alt="TacoPaser Image" style="border-radius: 15px; width: 100%; height: auto; margin-top: 10px; margin-bottom: 30px;">
                                 <div class="buttons">
                                     <a class="btn btn-outline-dark" href="https://github.com/TonyDolenti/TacoParser/tree/version1/LoggingKata" role="button">Taco Parser Repository</a>
@@ -107,6 +108,12 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="new-card">
+            <div class="card-body">
+                <h2 class="card-title">Currently Working On:</h2>
+
         </div>
 
     </div>
